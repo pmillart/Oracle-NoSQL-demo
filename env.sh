@@ -3,7 +3,7 @@ TZ='Europe/Paris'; export TZ
 #export PATH=$JAVA_HOME/bin:$PATH
 
 export KVSTORE=kvdemo
-export KVHOME=~/kv-3.4.7
+export KVHOME=~/kv-4.2.2
 export KVROOT=$HOME/kvroot
 export KVDATA=$HOME/disk
 export KVHOST=`uname -n`

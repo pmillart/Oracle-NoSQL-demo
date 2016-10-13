@@ -28,3 +28,5 @@ java -jar $KVHOME/lib/kvstore.jar makebootconfig \
 -mgmt jmx
 
 ls -l  $KVROOT/config.xml
+
+cat $KVROOT/config.xml
