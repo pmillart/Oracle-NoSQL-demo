@@ -1,4 +1,4 @@
-. ~/NoSQLdemo/env.sh
+. ~/Oracle-NoSQL-demo/env.sh
 #echo Running
 #jps -m | grep $KVROOT
 echo -----------------------------------------------

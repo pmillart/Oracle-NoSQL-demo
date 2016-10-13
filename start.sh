@@ -1,4 +1,4 @@
-. ~/NoSQLdemo/env.sh
+. ~/Oracle-NoSQL-demo/env.sh
 echo Starting at `date`
 jps -m | grep $KVROOT
 

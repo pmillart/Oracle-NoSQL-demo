@@ -1,4 +1,4 @@
-. ~/NoSQLdemo/env.sh
+. ~/Oracle-NoSQL-demo/env.sh
 cd $KVHOME
 java -classpath lib/kvclient.jar:examples \
 hadoop.table.LoadVehicleTable  \

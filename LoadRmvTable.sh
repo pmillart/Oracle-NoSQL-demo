@@ -1,4 +1,4 @@
-. ~/NoSQLdemo/env.sh
+. ~/Oracle-NoSQL-demo/env.sh
 cd $KVHOME
 javac -cp $KVHOME/lib/kvclient.jar:examples examples/hadoop/hive/table/LoadRmvTable.java
 
