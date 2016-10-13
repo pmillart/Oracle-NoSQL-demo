@@ -1,0 +1,6 @@
+connect store -name kvdemo
+execute 'create index RmvTableIdx1 on RmvTable (lastname,firstname)'
+show table -name rmvTable 
+get table -name rmvTable -index RmvTableIdx1 -field lastname -value 'ALLEN'
+aggregate table -name rmvTable -count -index RmvTableIdx1 -field lastname -value 'ALLEN'
+

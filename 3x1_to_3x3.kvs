@@ -1,0 +1,10 @@
+plan change-parameters -service sn1 -wait -params capacity=3
+plan change-parameters -service sn2 -wait -params capacity=3
+plan change-parameters -service sn3 -wait -params capacity=3
+
+topology clone -current -name 3x3
+
+topology redistribute -name 3x3 -pool AllStorageNodes
+topology preview -name 3x3
+
+plan deploy-topology -name 3x3 

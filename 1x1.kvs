@@ -1,0 +1,11 @@
+configure -name kvdemo
+plan deploy-zone -name "Cloud" -rf 1 -wait
+plan deploy-sn -zn zn1 -host nosql1 -port 5000 -wait
+plan deploy-admin -sn sn1 -port 5001 -wait
+pool create -name CloudPool
+pool join -name CloudPool -sn sn1
+
+topology create -name 1x1 -pool CloudPool -partitions 30
+topology preview -name 1x1
+plan deploy-topology -name 1x1 -wait
+

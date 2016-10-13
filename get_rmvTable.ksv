@@ -1,0 +1,3 @@
+connect store -name kvdemo
+get table -name rmvTable -index RmvTableIdx1 -field lastname -value ALLEN
+get table -name rmvTable -field zipcode -value 99381

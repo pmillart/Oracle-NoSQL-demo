@@ -1,0 +1,5 @@
+show tables
+show table -name vehicleTable
+connect store -name kvdemo
+aggregate table -name vehicleTable -count
+aggregate table -name vehicleTable -avg price
