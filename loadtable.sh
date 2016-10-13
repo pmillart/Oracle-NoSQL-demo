@@ -2,7 +2,7 @@
 cd $KVHOME
 java -classpath lib/kvclient.jar:examples \
 hadoop.table.LoadVehicleTable  \
--store kvdemo -host nosql1 -port 5000  \
+-store kvdemo -host $KVHOST -port $KVPORT  \
 -nops 1000
 cd -
-java -jar $KVHOME/lib/kvstore.jar runadmin -port 5000 -host nosql1 load -file $HOME/Oracle-NoSQL-demo/loadtable.kvs
+java -jar $KVHOME/lib/kvstore.jar runadmin -port $KVPORT -host $KVHOST -file $HOME/Oracle-NoSQL-demo/loadtable.kvs

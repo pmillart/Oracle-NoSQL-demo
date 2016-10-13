@@ -15,11 +15,11 @@ mkdir -p ${KVDATA}3
 echo java  -jar \$KVHOME/lib/kvstore.jar makebootconfig -root $KVROOT -port 5000 ...
 java -jar $KVHOME/lib/kvstore.jar makebootconfig \
 -root $KVROOT \
--port 5000 \
--admin 5001 \
+-port $KVPORT \
+-admin $(($KVPORT+1)) \
 -host $KVHOST \
--harange 5010,5020 \
--servicerange 5021,5049 \
+-harange $(($KVPORT+10)),$(($KVPORT+20)) \
+-servicerange $(($KVPORT+21)),$(($KVPORT+49)) \
 -store-security none \
 -capacity 1 \
 -storagedir ${KVDATA}1 \

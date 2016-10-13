@@ -6,4 +6,4 @@ echo killing at `date`
 pkill -f $KVROOT
 sleep 5
 jps -m | grep $KVROOT
-echo netstat -ntpl | grep 5000
+echo netstat -ntpl | grep $KVPORT
