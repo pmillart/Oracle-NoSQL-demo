@@ -1,11 +1,11 @@
 TZ='Europe/Paris'; export TZ
-export JAVA_HOME=~/jdk1.8.0_60
-export PATH=$JAVA_HOME/bin:$PATH
+#export JAVA_HOME=~/jdk1.8.0_60
+#export PATH=$JAVA_HOME/bin:$PATH
 
 export KVSTORE=kvdemo
 export KVHOME=~/kv-3.4.7
-export KVROOT=/nosql/NoSQLdemo/kvroot
-export KVDATA=/nosql/NoSQLdemo/disk
+export KVROOT=$HOME/kvroot
+export KVDATA=$HOME/disk
 export KVHOST=`uname -n`
 export KVPORT=5000
 
