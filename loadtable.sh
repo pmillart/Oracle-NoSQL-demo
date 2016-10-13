@@ -5,4 +5,4 @@ hadoop.table.LoadVehicleTable  \
 -store kvdemo -host $KVHOST -port $KVPORT  \
 -nops 1000
 cd -
-java -jar $KVHOME/lib/kvstore.jar runadmin -port $KVPORT -host $KVHOST -file $HOME/Oracle-NoSQL-demo/loadtable.kvs
+java -jar $KVHOME/lib/kvstore.jar runadmin -port $KVPORT -host $KVHOST load -file $HOME/Oracle-NoSQL-demo/loadtable.kvs

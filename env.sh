@@ -17,6 +17,7 @@ alias KVstop="java -jar $KVHOME/lib/kvstore.jar stop -root $KVROOT"
 alias KVping="java -jar $KVHOME/lib/kvstore.jar ping  -port $KVPORT -host $KVHOST"
 alias KVpings="java -jar -Doracle.kv.security=$KVROOT/security/adminlogin $KVHOME/lib/kvstore.jar ping  -port $KVPORT -host $KVHOST"
 
+alias KVSQL="java -jar $KVHOME/lib/sql.jar -helper-hosts $KVHOST:$KVPORT -store $KVSTORE"
 
 #echo KVSTORE=$KVSTORE KVHOST=$KVHOST:$KVPORT
 #env | grep KV
