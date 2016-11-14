@@ -11,6 +11,7 @@ java -version
 
 Download Oracle NoSQL (ce or ee) from http://www.oracle.com/technetwork/database/database-technologies/nosqldb/downloads/index.html
 
+wget http://download.oracle.com/otn-pub/otn_software/nosql-database/kv-ce-4.2.13.tar.gz
 
 tar -xvf kv-ee-4.0.9.tar.gz
 tar -xvf kv-examples-4.0.9.tar.gz
