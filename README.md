@@ -15,7 +15,6 @@ Download Oracle NoSQL (ce or ee) from http://www.oracle.com/technetwork/database
 wget http://download.oracle.com/otn-pub/otn_software/nosql-database/kv-examples-4.2.13.tar.gz
 
 tar -zxvf kv-ce-4.2.13.tar.gz
-tar -zxvf kv-examples-4.2.13.tar.gz
-`
+tar -zxvf kv-examples-4.2.13.tar.gz`
 
 edit env.sh
