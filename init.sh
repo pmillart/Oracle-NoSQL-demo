@@ -1,5 +1,7 @@
 . ~/Oracle-NoSQL-demo/env.sh
 
+ #INIT
+ 
 echo ---------------------------------------------------
 echo remove KVROOT and data
 [ -n "$KVROOT" ] && rm -r $KVROOT
